@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Estimado <%= @user.name %>: </h1>
+    <h2>Gracias por transar en Ex-Change Ten </h2>
+    <p>
+      Su transacción ha sido procesada correctamente <br>
+    </p>
+    <% if @is_buy %>
+        <p>
+        El monto comprado es de: CLP$<%= -1*@transaction.amount %>.
+        </p>
+    <% else %>
+        <p>
+        El monto vendido es de: CLP$<%= @transaction.amount %>.
+        </p>
+    <% end %>
+    <p>Para la cryptomoneda: <%= @cryptocurrency.name %></p>
+    <p>Gracias por preferirnos, vuelva pronto.</p>
+  </body>
+</html>

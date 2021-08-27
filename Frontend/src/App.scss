@@ -1,0 +1,96 @@
+@import '~antd/dist/antd.css';
+
+$navbar-height: 64px;
+$footer-height: 70px;
+
+.ant-layout-header {
+  color: white;
+  height: $navbar-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    margin-right: 32px;
+  }
+}
+
+.ant-layout-content {
+  height: calc(100vh - #{$navbar-height} - #{$footer-height});
+  padding: 16px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .ant-row {
+    width: 100%;
+  }
+}
+
+.ant-layout-footer {
+  text-align: center;
+  height: $footer-height;
+}
+
+.sc-bdnylx {
+  width: 1200px;
+  min-height: 600px;
+  display: initial;
+}
+
+.ant-tabs {
+  width: 600px;
+}
+
+.ant-tabs-nav-list {
+  justify-content: center;
+}
+
+#components-grid-demo-flex-order [class~='ant-row'] {
+  background: rgba(128, 128, 128, 0.08);
+}
+
+#nameCard {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contentCard {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.dataCard {
+  font-size: 12px;
+}
+
+.transaction-tables {
+  font-size: 10px;
+  width: 800px;
+  height: 250px;
+  justify-content: center;
+}
+
+.ant-table-header {
+  font-size: 14px;
+}
+
+.ant-table-body {
+  font-size: 12px;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+  position: relative;
+  padding: 5px 5px;
+  overflow-wrap: break-word;
+}
+
+#sign-out-btn > button {
+  background-color: #001529;
+  color: white;
+}
+
